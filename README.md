@@ -8,6 +8,8 @@ Enviorments
 
 Run
  - python TaskMgr.py 
- or 
+
+or 
  - python2 TaskMgr.py
- if you set Python3 as your default python command
+
+if you set Python3 as your default python command
