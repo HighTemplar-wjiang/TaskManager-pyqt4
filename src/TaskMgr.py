@@ -82,8 +82,8 @@ class TaskMgr(QMainWindow, Ui_MainWindow):
             curve.setData(x, y)
             curve.attach(self.qwtPlot_CPU)
         except:
-            print "Exception: TaskMgr.__displaySources()"
-            print sys.exc_info()
+            print("Exception: TaskMgr.__displaySources()")
+            print(sys.exc_info())
 
 
     def __displayProcs(self):
@@ -110,8 +110,8 @@ class TaskMgr(QMainWindow, Ui_MainWindow):
                 item.setData(QtCore.Qt.DisplayRole, int(self.statInfo["ProcInfos"][x]["memory"]) / 1024)
                 self.tableWidget_process.setItem(x, 5, item)
         except:
-            print "Exception: TaskMgr.__displayProcs()"
-            print sys.exc_info()
+            print("Exception: TaskMgr.__displayProcs()")
+            print(sys.exc_info())
 
 
     def __displayModules(self):
@@ -131,8 +131,8 @@ class TaskMgr(QMainWindow, Ui_MainWindow):
                 item.setTextAlignment(QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter)
                 self.tableWidget_module.setItem(x, 2, item)
         except:
-            print "Exception: TaskMgr.__displayModules()"
-            print sys.exc_info()
+            print("Exception: TaskMgr.__displayModules()")
+            print(sys.exc_info())
 
 
     def __displayAbout(self):
@@ -222,8 +222,8 @@ class TaskMgr(QMainWindow, Ui_MainWindow):
             self.label_status.setText("Time: " + curTime + 
                 "            CPU: " + CPUUsage + "            Memory: " + MemUsage)
         except:
-            print "Exception: TaskMgr.refresh()"
-            print sys.exc_info()
+            print("Exception: TaskMgr.refresh()")
+            print(sys.exc_info())
         
 
 app = QApplication(sys.argv)

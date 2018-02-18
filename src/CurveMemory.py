@@ -10,7 +10,8 @@ from PyQt4 import Qt
 from PyQt4 import QtGui
 from PyQt4 import QtCore
 import PyQt4.Qwt5 as Qwt
-from PyQt4.Qwt5.anynumpy import *
+from numpy import *
+# from PyQt4.Qwt5.anynumpy import *
 
 
 #-- cpustat.cpp --#
